@@ -1,0 +1,107 @@
+body {
+  background:#ffe;
+}
+
+#menu {
+  float: left;
+  width: 0%;
+}
+#content {
+  /*margin-left: 0%;*/
+  font-size: 12pt;
+}
+
+.show {
+  display: inline;
+}
+
+.hide {
+  display: none;
+}
+
+#profile {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background:#ffe;
+  border: 1px solid #ccc;
+  padding: 3px;
+  /* position fixed for IE6 */
+  _position: absolute;
+  _top: expression(documentElement.scrollTop+"px");
+}
+
+/*menu list*/
+#menu ul {
+  border:1px solid #ccc;
+  margin:0;
+  padding:5px;
+}
+
+#menu ul li {
+  list-style:none;
+  margin-bottom:10px;
+  text-align:right;
+}
+
+/*content */
+#content {
+  /*border-left:1px solid #ccc;*/
+  padding-left:10px;
+}
+
+h2 {
+  color:maroon;
+}
+
+#content table {
+  width:100%;
+  *width:99%;
+}
+
+#content th {
+  /*background:#ccc;*/
+}
+
+#content td {
+  background:#f0f0f0;
+}
+
+#content tr:hover td{
+   background:yellow;
+}
+
+#content fieldset {
+  margin-bottom:10px;
+  padding:5px 10px;
+}
+
+#content fieldset div {
+  border-bottom:1px dotted #ccc;
+  margin-bottom:10px;
+  padding-bottom:5px;
+}
+
+#content form .btn-submit {
+  margin: 10px 0;
+}
+
+/*pagination*/
+#content .pagination {
+  text-align:center;
+  padding:10px 0;
+}
+
+#content .pagination a, #content .pagination strong {
+  padding:0 5px;
+}
+
+#content .mark td {
+  color:white;
+  background:orange;
+}
+
+.red {
+  color:red;
+}
+

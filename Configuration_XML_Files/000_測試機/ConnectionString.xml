@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ConnetionString name="DB連線字串">
+  <A0POS>
+    <DataSource>IT-DB</DataSource>
+    <ID>sa</ID>
+    <Password>
+      PyyC/vuDXOj4B5yinJ9crWFBcZyUAT2i1pIJNCVP6Xw=
+    </Password>
+       <InitialCatalog>A0POS</InitialCatalog>
+  </A0POS>
+  
+  <kw>
+    <DataSource>IT-DB</DataSource>
+    <ID>sa</ID>
+    <Password>
+      PyyC/vuDXOj4B5yinJ9crWFBcZyUAT2i1pIJNCVP6Xw=
+    </Password>
+      <InitialCatalog>kw</InitialCatalog>
+  </kw>
+  
+  <OBPOS>
+    <DataSource>IT-DB</DataSource>
+    <ID>sa</ID>
+    <Password>
+      PyyC/vuDXOj4B5yinJ9crWFBcZyUAT2i1pIJNCVP6Xw=
+    </Password>
+    <InitialCatalog>OBPOS</InitialCatalog>
+  </OBPOS>
+  
+  <orangebear>
+    <DataSource>IT-DB</DataSource>
+    <ID>sa</ID>
+    <Password>
+      PyyC/vuDXOj4B5yinJ9crWFBcZyUAT2i1pIJNCVP6Xw=
+    </Password>
+    <InitialCatalog>orangebear</InitialCatalog>
+  </orangebear>
+  
+  <SERVERPOS>
+    <DataSource>IT-DB</DataSource>
+    <ID>sa</ID>
+    <Password>
+      PyyC/vuDXOj4B5yinJ9crWFBcZyUAT2i1pIJNCVP6Xw=
+    </Password>
+    <InitialCatalog>SERVERPOS</InitialCatalog>
+  </SERVERPOS>
+  
+  <XPPOS>
+    <DataSource>IT-DB</DataSource>
+    <ID>sa</ID>
+    <Password>
+      PyyC/vuDXOj4B5yinJ9crWFBcZyUAT2i1pIJNCVP6Xw=
+    </Password>
+    <InitialCatalog>XPPOS</InitialCatalog>
+  </XPPOS>
+  
+  <PosClient>
+    <DataSource>IT-DB</DataSource>
+    <ID>sa</ID>
+    <Password>
+      PyyC/vuDXOj4B5yinJ9crWFBcZyUAT2i1pIJNCVP6Xw=</Password>
+    <InitialCatalog>PosClient</InitialCatalog>
+  </PosClient>
+ 
+</ConnetionString>
+
+
+

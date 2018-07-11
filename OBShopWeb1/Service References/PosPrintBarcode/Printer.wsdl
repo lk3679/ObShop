@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Printer" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="Register_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="10000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <cdp:CompositeDuplex xmlns:cdp="http://schemas.microsoft.com/net/2006/06/duplex" />
+        <ow:OneWay xmlns:ow="http://schemas.microsoft.com/ws/2005/05/routing/policy" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="Print_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="10000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <cdp:CompositeDuplex xmlns:cdp="http://schemas.microsoft.com/net/2006/06/duplex" />
+        <ow:OneWay xmlns:ow="http://schemas.microsoft.com/ws/2005/05/routing/policy" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="Manager_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="10000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <cdp:CompositeDuplex xmlns:cdp="http://schemas.microsoft.com/net/2006/06/duplex" />
+        <ow:OneWay xmlns:ow="http://schemas.microsoft.com/ws/2005/05/routing/policy" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://observice.obdesign.com.tw/BarcodePrinter/IO/Printer/BarcodePrinter/Printer.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://observice.obdesign.com.tw/BarcodePrinter/IO/Printer/BarcodePrinter/Printer.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://observice.obdesign.com.tw/BarcodePrinter/IO/Printer/BarcodePrinter/Printer.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://observice.obdesign.com.tw/BarcodePrinter/IO/Printer/BarcodePrinter/Printer.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/OrangeBear.IO.Printer.BarcodePrinter" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRegister_HeartBeat_InputMessage">
+    <wsdl:part name="parameters" element="tns:HeartBeat" />
+  </wsdl:message>
+  <wsdl:message name="IRegister_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="IRegister_RegisterStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterStatus" />
+  </wsdl:message>
+  <wsdl:message name="IRegister_UnRegister_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnRegister" />
+  </wsdl:message>
+  <wsdl:message name="IRegister_CallBackPrint_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CallBackPrint" />
+  </wsdl:message>
+  <wsdl:message name="IRegister_CallBackPrint_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CallBackPrintResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRegister_CallBackPrintSingle_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CallBackPrintSingle" />
+  </wsdl:message>
+  <wsdl:message name="IRegister_CallBackPrintSingle_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CallBackPrintSingleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRegister_CallBackPrintPick_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CallBackPrintPick" />
+  </wsdl:message>
+  <wsdl:message name="IRegister_CallBackPrintPick_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CallBackPrintPickResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRegister_CallBackHearBeat_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CallBackHearBeat" />
+  </wsdl:message>
+  <wsdl:message name="IRegister_get_Server_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:get_Server" />
+  </wsdl:message>
+  <wsdl:message name="IRegister_get_Server_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:get_ServerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRegister_set_Server_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:set_Server" />
+  </wsdl:message>
+  <wsdl:message name="IRegister_set_Server_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:set_ServerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPrint_GetPrinterIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrinterIDs" />
+  </wsdl:message>
+  <wsdl:message name="IPrint_GetPrinterIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrinterIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPrint_CheckService_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckService" />
+  </wsdl:message>
+  <wsdl:message name="IPrint_CheckService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPrint_Print_InputMessage">
+    <wsdl:part name="parameters" element="tns:Print" />
+  </wsdl:message>
+  <wsdl:message name="IPrint_Print_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrintResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPrint_PrintSingle_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrintSingle" />
+  </wsdl:message>
+  <wsdl:message name="IPrint_PrintSingle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrintSingleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPrint_PrintPick_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrintPick" />
+  </wsdl:message>
+  <wsdl:message name="IPrint_PrintPick_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrintPickResponse" />
+  </wsdl:message>
+  <wsdl:message name="IManager_Kick_InputMessage">
+    <wsdl:part name="parameters" element="tns:Kick" />
+  </wsdl:message>
+  <wsdl:message name="IManager_Kick_OutputMessage">
+    <wsdl:part name="parameters" element="tns:KickResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IRegister">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="HeartBeat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRegister/HeartBeat" message="tns:IRegister_HeartBeat_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRegister/Register" message="tns:IRegister_Register_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="RegisterStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRegister/RegisterStatus" message="tns:IRegister_RegisterStatus_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="UnRegister">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRegister/UnRegister" message="tns:IRegister_UnRegister_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CallBackPrint">
+      <wsdl:output wsaw:Action="http://tempuri.org/IRegister/CallBackPrint" message="tns:IRegister_CallBackPrint_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IRegister/CallBackPrintResponse" message="tns:IRegister_CallBackPrint_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CallBackPrintSingle">
+      <wsdl:output wsaw:Action="http://tempuri.org/IRegister/CallBackPrintSingle" message="tns:IRegister_CallBackPrintSingle_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IRegister/CallBackPrintSingleResponse" message="tns:IRegister_CallBackPrintSingle_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CallBackPrintPick">
+      <wsdl:output wsaw:Action="http://tempuri.org/IRegister/CallBackPrintPick" message="tns:IRegister_CallBackPrintPick_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IRegister/CallBackPrintPickResponse" message="tns:IRegister_CallBackPrintPick_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CallBackHearBeat">
+      <wsdl:output wsaw:Action="http://tempuri.org/IRegister/CallBackHearBeat" message="tns:IRegister_CallBackHearBeat_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="get_Server">
+      <wsdl:output wsaw:Action="http://tempuri.org/IRegister/get_Server" message="tns:IRegister_get_Server_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IRegister/get_ServerResponse" message="tns:IRegister_get_Server_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="set_Server">
+      <wsdl:output wsaw:Action="http://tempuri.org/IRegister/set_Server" message="tns:IRegister_set_Server_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IRegister/set_ServerResponse" message="tns:IRegister_set_Server_InputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IPrint">
+    <wsdl:operation name="GetPrinterIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPrint/GetPrinterIDs" message="tns:IPrint_GetPrinterIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPrint/GetPrinterIDsResponse" message="tns:IPrint_GetPrinterIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPrint/CheckService" message="tns:IPrint_CheckService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPrint/CheckServiceResponse" message="tns:IPrint_CheckService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Print">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPrint/Print" message="tns:IPrint_Print_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPrint/PrintResponse" message="tns:IPrint_Print_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintSingle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPrint/PrintSingle" message="tns:IPrint_PrintSingle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPrint/PrintSingleResponse" message="tns:IPrint_PrintSingle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintPick">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPrint/PrintPick" message="tns:IPrint_PrintPick_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPrint/PrintPickResponse" message="tns:IPrint_PrintPick_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IManager">
+    <wsdl:operation name="Kick">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManager/Kick" message="tns:IManager_Kick_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManager/KickResponse" message="tns:IManager_Kick_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Register" type="tns:IRegister">
+    <wsp:PolicyReference URI="#Register_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HeartBeat">
+      <soap12:operation soapAction="http://tempuri.org/IRegister/HeartBeat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <soap12:operation soapAction="http://tempuri.org/IRegister/Register" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterStatus">
+      <soap12:operation soapAction="http://tempuri.org/IRegister/RegisterStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="UnRegister">
+      <soap12:operation soapAction="http://tempuri.org/IRegister/UnRegister" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="CallBackPrint">
+      <soap12:operation soapAction="http://tempuri.org/IRegister/CallBackPrint" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallBackPrintSingle">
+      <soap12:operation soapAction="http://tempuri.org/IRegister/CallBackPrintSingle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallBackPrintPick">
+      <soap12:operation soapAction="http://tempuri.org/IRegister/CallBackPrintPick" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallBackHearBeat">
+      <soap12:operation soapAction="http://tempuri.org/IRegister/CallBackHearBeat" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Server">
+      <soap12:operation soapAction="http://tempuri.org/IRegister/get_Server" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Server">
+      <soap12:operation soapAction="http://tempuri.org/IRegister/set_Server" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Print" type="tns:IPrint">
+    <wsp:PolicyReference URI="#Print_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPrinterIDs">
+      <soap12:operation soapAction="http://tempuri.org/IPrint/GetPrinterIDs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckService">
+      <soap12:operation soapAction="http://tempuri.org/IPrint/CheckService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Print">
+      <soap12:operation soapAction="http://tempuri.org/IPrint/Print" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintSingle">
+      <soap12:operation soapAction="http://tempuri.org/IPrint/PrintSingle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintPick">
+      <soap12:operation soapAction="http://tempuri.org/IPrint/PrintPick" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Manager" type="tns:IManager">
+    <wsp:PolicyReference URI="#Manager_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Kick">
+      <soap12:operation soapAction="http://tempuri.org/IManager/Kick" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Printer">
+    <wsdl:port name="Register" binding="tns:Register">
+      <soap12:address location="http://observice.obdesign.com.tw/BarcodePrinter/IO/Printer/BarcodePrinter/Printer.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://observice.obdesign.com.tw/BarcodePrinter/IO/Printer/BarcodePrinter/Printer.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="Print" binding="tns:Print">
+      <soap12:address location="http://observice.obdesign.com.tw/BarcodePrinter/IO/Printer/BarcodePrinter/Printer.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://observice.obdesign.com.tw/BarcodePrinter/IO/Printer/BarcodePrinter/Printer.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="Manager" binding="tns:Manager">
+      <soap12:address location="http://observice.obdesign.com.tw/BarcodePrinter/IO/Printer/BarcodePrinter/Printer.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://observice.obdesign.com.tw/BarcodePrinter/IO/Printer/BarcodePrinter/Printer.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

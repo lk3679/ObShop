@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<shop>
+  <!--<store name="忠孝店">
+    <title1>橘熊科技股份有限公司</title1>
+    <title2> 忠孝門市部</title2>
+    <busNo>NO:38646825 </busNo>
+    <tel> 02-66159077</tel>
+    <address1>臺北市大安區忠孝東路4段</address1>
+    <address2>205巷24號1樓</address2>
+  </store>-->
+  <store name="市府店">
+    <title1>橘熊科技股份有限公司</title1>
+    <title2>市府門市部</title2>
+    <busNo>NO:38635263 </busNo>
+    <tel> 02-66159077</tel>
+    <address1>北市忠孝東路五段35號2樓</address1>
+    <address2></address2>
+  </store>
+</shop>

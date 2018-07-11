@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MemberList name="商控人員列表">
+  <Member>
+    <ID>-99</ID>
+    <Account>catshinyi</Account>
+    <Name>欣怡</Name>
+  </Member>
+  <Member>
+    <ID>-98</ID>
+    <Account>huang.peiru</Account>
+    <Name>珮如</Name>
+  </Member>
+  <Member>
+    <ID>-97</ID>
+    <Account>juita</Account>
+    <Name>瑞達</Name>
+</Member>
+  <Member>
+    <ID>-96</ID>
+    <Account>robert</Account>
+    <Name>robert</Name>
+  </Member>
+</MemberList>

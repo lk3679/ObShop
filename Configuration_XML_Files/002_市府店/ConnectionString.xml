@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ConnetionString name="DB連線字串">
+  <A0POS>
+      <DataSource>OBDB</DataSource>
+      <ID>orangebear</ID>
+      <Password>zHQE0l7eRENMbmRo0d0jvg==</Password>
+       <InitialCatalog>A0POS</InitialCatalog>
+  </A0POS>
+  
+  <kw>
+      <DataSource>KW-SQL-CLUSTER</DataSource>
+      <ID>rangebear</ID>
+      <Password>zHQE0l7eRENMbmRo0d0jvg==</Password>
+      <InitialCatalog>kw</InitialCatalog>
+  </kw>
+  
+  <OBPOS>
+    <DataSource>OBDB</DataSource>
+    <ID>orangebear</ID>
+    <Password>zHQE0l7eRENMbmRo0d0jvg==</Password>
+    <InitialCatalog>OBPOS</InitialCatalog>
+  </OBPOS>
+  
+  <orangebear>
+    <DataSource>OBDB</DataSource>
+    <ID>orangebear</ID>
+    <Password>zHQE0l7eRENMbmRo0d0jvg==</Password>
+    <InitialCatalog>orangebear</InitialCatalog>
+  </orangebear>
+  
+  <SERVERPOS>
+    <DataSource>OBDB</DataSource>
+    <ID>orangebear</ID>
+    <Password>zHQE0l7eRENMbmRo0d0jvg==</Password>
+    <InitialCatalog>SERVERPOS</InitialCatalog>
+  </SERVERPOS>
+  
+  <XPPOS>
+    <DataSource>OBDB</DataSource>
+    <ID>orangebear</ID>
+    <Password>zHQE0l7eRENMbmRo0d0jvg==</Password>
+    <InitialCatalog>XPPOS</InitialCatalog>
+  </XPPOS>
+  
+  <PosClient>
+    <DataSource>S03001</DataSource>
+    <ID>shopposap</ID>
+    <Password>M9k/aCKy4DBICcuQ3CRCow==</Password>
+    <InitialCatalog>PosClient</InitialCatalog>
+  </PosClient>
+ 
+</ConnetionString>
+
+
+

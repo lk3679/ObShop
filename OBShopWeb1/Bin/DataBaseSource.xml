@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataBaseSource</name>
+    </assembly>
+    <members>
+        <member name="T:Data.DataBaseSource.DBStructure">
+            <summary>
+            DBclass
+            </summary>
+        </member>
+        <member name="F:Data.DataBaseSource.DBStructure.Conn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Data.DataBaseSource.DBStructure.Cmd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Data.DataBaseSource.DBStructure.Trs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Data.DataBaseSource.DBStructure.Trd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Data.DataBaseSource.DBStructure.#ctor">
+            <summary>
+            預設建構式對照預設connection屬性
+            </summary>
+        </member>
+        <member name="M:Data.DataBaseSource.DBStructure.#ctor(System.String)">
+            <summary>
+            自訂建構式對照自訂connection屬性
+            </summary>
+            <param name="DBConnection">連線字串</param>
+        </member>
+        <member name="F:Data.DataBaseSource.DBStructure.TrsCmd">
+            <summary>
+            讓Cmd知道目前狀態,以方便Transaction提交command
+            </summary>
+        </member>
+        <member name="M:Data.DataBaseSource.DBStructure.BeginTransaction">
+            <summary>
+            開始Transaction提交Connection機制
+            </summary>
+        </member>
+        <member name="F:Data.DataBaseSource.DBStructure._trsType">
+            <summary>
+            型別後面加?=>預設為null
+            </summary>
+        </member>
+        <member name="M:Data.DataBaseSource.DBStructure.EndTransaction(Data.DataBaseSource.DBStructure.EnumTrs)">
+            <summary>
+            結束Transaction狀態,已通知用TrsType屬性的人是要commit或rollback
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:Data.DataBaseSource.DBStructure.SQLCommand(System.String)">
+            <summary>
+            利用SQL Command做Select,Insert,Update,Delete處理資料，如要使用多筆輸異動更新，需填入該Table的Select Command
+            </summary>
+            <param name="sqlCom">SQL Command</param>
+        </member>
+        <member name="M:Data.DataBaseSource.DBStructure.Run(System.Data.DataTable@,Data.DataBaseSource.DBStructure.WorkType)">
+            <summary>
+            開始動作程序
+            </summary>
+            <param name="dt"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:Data.DataBaseSource.DBStructure.RunEnumTrs">
+            <summary>
+            利用TrsType檢查目前狀態
+            </summary>
+        </member>
+        <member name="F:Data.DataBaseSource.DBStructure.TrError">
+            <summary>
+            公用變數用來偵錯是否有例外
+            </summary>
+        </member>
+        <member name="M:Data.DataBaseSource.DBStructure.Work(System.Object)">
+            <summary>
+            進入執行緒中的委派(註:發生例外無法得知哪一行,因為是執行緒)
+            </summary>
+            <param name="dt"></param>
+        </member>
+        <member name="M:Data.DataBaseSource.DBStructure.AddParameter(System.String,System.Data.SqlDbType,System.Object)">
+            <summary>
+            加入Parameter(含型態)
+            </summary>
+            <param name="key"></param>
+            <param name="type"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Data.DataBaseSource.DBStructure.AddParameterValue(System.String,System.Object)">
+            <summary>
+            加入Parameter
+            </summary>
+            <param name="key">key</param>
+            <param name="value">value</param>
+            <remarks></remarks>
+        </member>
+        <member name="M:Data.DataBaseSource.DBStructure.ClearParameters">
+            <summary>
+            清除Parameter
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:Data.DataBaseSource.DBStructure.Dispose">
+            <summary>
+            釋放記憶體
+            </summary>
+        </member>
+        <member name="M:Data.DataBaseSource.DBStructure.RemoveParameter(System.String)">
+            <summary>
+            移除Parameter
+            </summary>
+            <param name="key">key</param>
+            <remarks></remarks>
+        </member>
+        <member name="P:Data.DataBaseSource.DBStructure.DatabaseConnection">
+            <summary>
+            自訂connection屬性
+            </summary>
+        </member>
+        <member name="P:Data.DataBaseSource.DBStructure.DatabaseConnectionString">
+            <summary>
+            預設connection屬性
+            </summary>
+        </member>
+        <member name="P:Data.DataBaseSource.DBStructure.TrsType">
+            <summary>
+            型別後面加?=>預設為null-設定是要commit或rollback
+            </summary>
+        </member>
+        <member name="T:Data.DataBaseSource.DBStructure.WorkType">
+            <summary>
+            資料類型
+            </summary>
+        </member>
+        <member name="F:Data.DataBaseSource.DBStructure.WorkType.Fill">
+            <summary>
+            SqlDataAdapter
+            </summary>
+        </member>
+        <member name="F:Data.DataBaseSource.DBStructure.WorkType.Update">
+            <summary>
+            update
+            </summary>
+        </member>
+        <member name="T:Data.DataBaseSource.DBStructure.EnumTrs">
+            <summary>
+            執行Transaction種類
+            </summary>
+        </member>
+        <member name="F:Data.DataBaseSource.DBStructure.EnumTrs.Commit">
+            <summary>
+            Commit
+            </summary>
+        </member>
+        <member name="F:Data.DataBaseSource.DBStructure.EnumTrs.Rollback">
+            <summary>
+            Rollback
+            </summary>
+        </member>
+    </members>
+</doc>

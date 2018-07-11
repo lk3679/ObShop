@@ -1,0 +1,48 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.Consumer{
+	float: left;
+	width: 1024px;
+	height: 768px;	
+	background-repeat: no-repeat;
+	background-position:left bottom;
+	}
+	
+	
+.ShowPrice{
+	font-family: \5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4, Microsoft Jhenghei;
+	margin-left:30px;
+	margin-top:365px;
+	width:565px;
+	height:365px;
+	font-size: 18px;
+	line-height: 30px;
+	}
+	
+.Aitems{
+	font-family: \5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4, Microsoft Jhenghei;
+	font-size: 16px;
+	line-height: 20px;
+	}
+
+.tit_list{
+	font-family: \5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4, Microsoft Jhenghei;
+	font-size: 13px;
+	line-height: 30px;
+	border-bottom: 1px solid #3E3E3E;
+	text-align: center;
+	}	
+
+.colColor{    
+    width: 50px;
+}
+
+.colProductName{    
+    width: 280px;
+}
+
+.TruncateLongText {
+    overflow: hidden; 
+    white-space: nowrap;
+}

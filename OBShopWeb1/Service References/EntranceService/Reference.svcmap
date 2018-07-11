@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="83908a8f-fff4-4577-aedf-421d22d22b23" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://observice.obdesign.com.tw/AD/Entrance/Entrance.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Entrance.xsd" MetadataType="Schema" ID="2ea6ee36-053a-40cc-a96f-274d30045860" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Entrance/Entrance.svc?xsd=xsd3" />
+    <MetadataFile FileName="Entrance1.xsd" MetadataType="Schema" ID="46e5b734-1c14-4c7e-91fb-c24e3c7e657d" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Entrance/Entrance.svc?xsd=xsd2" />
+    <MetadataFile FileName="Entrance2.xsd" MetadataType="Schema" ID="1e0a43f5-186b-4711-b3a1-a5571485d3ff" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Entrance/Entrance.svc?xsd=xsd1" />
+    <MetadataFile FileName="Entrance3.xsd" MetadataType="Schema" ID="7737e71c-46b5-45fb-a2bb-b8fb1d3e29e3" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Entrance/Entrance.svc?xsd=xsd0" />
+    <MetadataFile FileName="Entrance.wsdl" MetadataType="Wsdl" ID="0b1dd45b-4f57-450f-b627-d6d3cb68d729" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Entrance/Entrance.svc?wsdl" />
+    <MetadataFile FileName="Entrance.disco" MetadataType="Disco" ID="d8622c3a-c223-47c3-b873-c07e9450ecc5" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Entrance/Entrance.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

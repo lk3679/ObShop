@@ -1,0 +1,1168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A8CC5F5-7A99-4ED3-AB74-405F6FE25966}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OBShopWeb</RootNamespace>
+    <AssemblyName>OBShopWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib">
+      <HintPath>DLLlib\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ExceptionSource, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLlib\ExceptionSource.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>DLLlib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.3.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>DLLlib\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>iTextSharp\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLlib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>DLLlib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ActivitiesSetting.aspx" />
+    <Content Include="ActivityRight.xml" />
+    <Content Include="AuthPro.aspx" />
+    <Content Include="AuthProFunction.aspx" />
+    <Content Include="AuthProUser.aspx" />
+    <Content Include="CreateDoc.aspx" />
+    <Content Include="css\bootstrap-datepicker.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="css\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="css\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="css\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="css\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="css\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="css\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="css\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="css\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="css\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="css\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="css\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jquery-ui.theme.min.css" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\orangebear.css" />
+    <Content Include="css\POS_Consumer.css" />
+    <Content Include="css\POS_style.css" />
+    <Content Include="css\Vip_style.css" />
+    <Content Include="day_end_report.aspx" />
+    <Content Include="day_end_report2.aspx" />
+    <Content Include="GetSerailProductByProductID.aspx" />
+    <Content Include="Image\backspace_bg.png" />
+    <Content Include="Image\close.png" />
+    <Content Include="Image\Delete.jpg" />
+    <Content Include="Image\Delete_over.jpg" />
+    <Content Include="Image\enter_bg.png" />
+    <Content Include="Image\logo.jpg" />
+    <Content Include="Image\NoProductMailSample.html" />
+    <Content Include="Image\OBLogo.jpg" />
+    <Content Include="Image\obshop.jpg" />
+    <Content Include="Image\obshop_small.jpg" />
+    <Content Include="Image\pos_for_ConsumerBG.jpg" />
+    <Content Include="Image\門市系統logo.png" />
+    <Content Include="InvoiceAudit.aspx" />
+    <Content Include="InvoiceInfo.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="js\bootstrap-datepicker.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-1.9.1.js" />
+    <Content Include="js\jquery-ui.min.js" />
+    <Content Include="js\jquery.paulund_modal_box.js" />
+    <Content Include="js\jquery.signalR-2.0.3.js" />
+    <Content Include="js\O_o_mini.js" />
+    <Content Include="logisticsScoreSetting.aspx" />
+    <Content Include="MenuHideList.aspx" />
+    <Content Include="menu_ship_manage1.aspx" />
+    <Content Include="menu_ship_manage2.aspx" />
+    <Content Include="menu_storage1.aspx" />
+    <Content Include="menu_storage2.aspx" />
+    <Content Include="js\lightbar.js" />
+    <Content Include="js\lightbar2.js" />
+    <Content Include="DiffHandle.aspx" />
+    <Content Include="ConnectionString.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="pos_barcode.pdf" />
+    <Content Include="NoProduct.aspx" />
+    <Content Include="NoProductCheck.aspx" />
+    <Content Include="OrderList.aspx" />
+    <Content Include="PDA\CreateStorageNew.aspx" />
+    <Content Include="PDA\DiffListPDA.aspx" />
+    <Content Include="PDA\InventoryNum.aspx" />
+    <Content Include="PDA\InventoryNumOne.aspx" />
+    <Content Include="PDA\Merge.aspx" />
+    <Content Include="PDA\MergeOneQ.aspx" />
+    <Content Include="PDA\MergePart.aspx" />
+    <Content Include="PDA\MergePart2.aspx" />
+    <Content Include="PDA\PrintStorageNew.aspx" />
+    <Content Include="PDA\SearchBarcode.aspx" />
+    <Content Include="PDA\SearchProduct.aspx" />
+    <Content Include="PDA\SearchProductStock.aspx" />
+    <Content Include="PDA\StorageInfo.aspx" />
+    <Content Include="PDA\StorageInfoLog.aspx" />
+    <Content Include="PDA\StorageInfoRangeNew.aspx" />
+    <Content Include="PDA\StorageInfoRangeSeries.aspx" />
+    <Content Include="PDA\StorageInOutLog.aspx" />
+    <Content Include="PDA\StorageReport.aspx" />
+    <Content Include="PDA\StorageSearchEmpty.aspx" />
+    <Content Include="AuthManagement.aspx" />
+    <Content Include="blank.aspx" />
+    <Content Include="Choice.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DiffList.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Image\Calendar.png" />
+    <Content Include="Image\loading2.gif" />
+    <Content Include="Image\loading3.gif" />
+    <Content Include="Image\loading4.gif" />
+    <Content Include="index.aspx" />
+    <Content Include="js\jquery.blockUI.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\json2.js" />
+    <Content Include="js\search.js" />
+    <Content Include="js\utils.js" />
+    <Content Include="js\lockkey.js" />
+    <Content Include="js\menu.js" />
+    <Content Include="layout.css" />
+    <Content Include="logistics_account.aspx" />
+    <Content Include="logistics_print.aspx" />
+    <Content Include="logistics_print2.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="menu.aspx" />
+    <Content Include="menu_BusNO_Invoice.aspx" />
+    <Content Include="menu_shipin.aspx" />
+    <Content Include="menu_logistics.aspx" />
+    <Content Include="menu_shipout.aspx" />
+    <Content Include="menu_ship_manage.aspx" />
+    <Content Include="menu_storage.aspx" />
+    <Content Include="menu_system.aspx" />
+    <Content Include="ob.jpg" />
+    <Content Include="PickCheck.aspx" />
+    <Content Include="pos_checkout_client.aspx" />
+    <Content Include="pos_check_out.aspx" />
+    <Content Include="pos_check_out2.aspx" />
+    <Content Include="pos_day_end_report.aspx" />
+    <Content Include="pos_day_end_report2.aspx" />
+    <Content Include="pos_functions.aspx" />
+    <Content Include="pos_number_setting.aspx" />
+    <Content Include="pos_order_query.aspx" />
+    <Content Include="pos_order_query2.aspx" />
+    <Content Include="pos_result.aspx" />
+    <Content Include="pos_SalesTaxReport.aspx" />
+    <Content Include="pos_sale_analysis.aspx" />
+    <Content Include="pos_stock.aspx" />
+    <Content Include="pos_stock_query.aspx" />
+    <Content Include="pos_transaction.aspx" />
+    <Content Include="pos_vip.aspx" />
+    <Content Include="PrintBarCode.aspx" />
+    <Content Include="printStockList.aspx" />
+    <Content Include="Privilege.aspx" />
+    <Content Include="ProductChange.aspx" />
+    <Content Include="RequireAdd.aspx" />
+    <Content Include="RequireCheck.aspx" />
+    <Content Include="RequireList.aspx" />
+    <Content Include="rmenu_default.aspx" />
+    <None Include="Service References\ADVerifyService\ADVerify.wsdl" />
+    <None Include="Service References\ADVerifyService\ADVerify.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ADVerifyService\ADVerify1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ADVerifyService\ADVerify2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ADVerifyService\configuration91.svcinfo" />
+    <None Include="Service References\ADVerifyService\configuration.svcinfo" />
+    <None Include="Service References\ADVerifyService\OBShopWeb.ADVerifyService.Group.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ADVerifyService\OBShopWeb.ADVerifyService.Identity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ADVerifyService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AuthService\Auth.disco" />
+    <None Include="Service References\AuthService\configuration91.svcinfo" />
+    <None Include="Service References\AuthService\configuration.svcinfo" />
+    <None Include="Service References\AuthService\OBShopWeb.AuthService.AuthMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AuthService\OBShopWeb.AuthService.Authority.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AuthService\OBShopWeb.AuthService.StructAuth.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AuthService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\EntranceService\Entrance.wsdl" />
+    <None Include="Service References\EntranceService\Entrance.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EntranceService\Entrance1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EntranceService\Entrance2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EntranceService\Entrance3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EntranceService\OBShopWeb.EntranceService.Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EntranceService\configuration91.svcinfo" />
+    <None Include="Service References\EntranceService\configuration.svcinfo" />
+    <None Include="Service References\EntranceService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\OBPrintBarcode\Printer.disco" />
+    <None Include="Service References\OBPrintBarcode\configuration91.svcinfo" />
+    <None Include="Service References\OBPrintBarcode\configuration.svcinfo" />
+    <None Include="Service References\OBPrintBarcode\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PosPrintBarcode\configuration91.svcinfo" />
+    <None Include="Service References\PosPrintBarcode\configuration.svcinfo" />
+    <None Include="Service References\PosPrintBarcode\OBShopWeb.PosPrintBarcode.PrintResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PosPrintBarcode\Printer1.wsdl" />
+    <None Include="Service References\PosPrintBarcode\Printer4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PosPrintBarcode\Printer5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PosPrintBarcode\Printer6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PosPrintBarcode\Printer7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PosPrintBarcode\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\EntranceService\Entrance.disco" />
+    <None Include="Service References\ADVerifyService\ADVerify.disco" />
+    <None Include="Service References\PosPrintBarcode\Printer1.disco" />
+    <Content Include="SerilaNameManage.aspx" />
+    <Content Include="SetIP.aspx" />
+    <Content Include="ShipInTicket.aspx" />
+    <Content Include="ShipInVerify.aspx" />
+    <Content Include="ShipOutTicket.aspx" />
+    <Content Include="ShipOutVerify.aspx" />
+    <Content Include="ShippingMoreLack.aspx" />
+    <Content Include="ShipTicketDetail.aspx" />
+    <Content Include="StockReport.aspx" />
+    <Content Include="StoreFloatList.aspx" />
+    <Content Include="StoreFloats.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SystemInfo.aspx" />
+    <Content Include="SystemOnlineList.aspx" />
+    <Content Include="SystemOnlineReport.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\AuthService\Auth.wsdl" />
+    <None Include="Service References\AuthService\Auth.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AuthService\Auth1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AuthService\Auth2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OBPrintBarcode\Printer.wsdl" />
+    <None Include="Service References\OBPrintBarcode\Printer.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OBPrintBarcode\Printer1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OBPrintBarcode\Printer2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OBPrintBarcode\Printer3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivitiesSetting.aspx.cs">
+      <DependentUpon>ActivitiesSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActivitiesSetting.aspx.designer.cs">
+      <DependentUpon>ActivitiesSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuthPro.aspx.cs">
+      <DependentUpon>AuthPro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthPro.aspx.designer.cs">
+      <DependentUpon>AuthPro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuthProFunction.aspx.cs">
+      <DependentUpon>AuthProFunction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthProFunction.aspx.designer.cs">
+      <DependentUpon>AuthProFunction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuthProUser.aspx.cs">
+      <DependentUpon>AuthProUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthProUser.aspx.designer.cs">
+      <DependentUpon>AuthProUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateDoc.aspx.cs">
+      <DependentUpon>CreateDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateDoc.aspx.designer.cs">
+      <DependentUpon>CreateDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateXLS.cs" />
+    <Compile Include="day_end_report.aspx.cs">
+      <DependentUpon>day_end_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="day_end_report.aspx.designer.cs">
+      <DependentUpon>day_end_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="day_end_report2.aspx.cs">
+      <DependentUpon>day_end_report2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="day_end_report2.aspx.designer.cs">
+      <DependentUpon>day_end_report2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DiffHandle.aspx.cs">
+      <DependentUpon>DiffHandle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DiffHandle.aspx.designer.cs">
+      <DependentUpon>DiffHandle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuHideList.aspx.cs">
+      <DependentUpon>MenuHideList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuHideList.aspx.designer.cs">
+      <DependentUpon>MenuHideList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Poslib\Area.cs" />
+    <Compile Include="Poslib\CreditCard.cs" />
+    <Compile Include="Poslib\Cryptography.cs" />
+    <Compile Include="Poslib\Enum.cs" />
+    <Compile Include="GetSerailProductByProductID.aspx.cs">
+      <DependentUpon>GetSerailProductByProductID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetSerailProductByProductID.aspx.designer.cs">
+      <DependentUpon>GetSerailProductByProductID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GvLightBar.cs" />
+    <Compile Include="InvoiceAudit.aspx.cs">
+      <DependentUpon>InvoiceAudit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InvoiceAudit.aspx.designer.cs">
+      <DependentUpon>InvoiceAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logisticsScoreSetting.aspx.cs">
+      <DependentUpon>logisticsScoreSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logisticsScoreSetting.aspx.designer.cs">
+      <DependentUpon>logisticsScoreSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu_ship_manage1.aspx.cs">
+      <DependentUpon>menu_ship_manage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu_ship_manage1.aspx.designer.cs">
+      <DependentUpon>menu_ship_manage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu_ship_manage2.aspx.cs">
+      <DependentUpon>menu_ship_manage2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu_ship_manage2.aspx.designer.cs">
+      <DependentUpon>menu_ship_manage2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu_storage1.aspx.cs">
+      <DependentUpon>menu_storage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu_storage1.aspx.designer.cs">
+      <DependentUpon>menu_storage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu_storage2.aspx.cs">
+      <DependentUpon>menu_storage2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu_storage2.aspx.designer.cs">
+      <DependentUpon>menu_storage2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NoProduct.aspx.cs">
+      <DependentUpon>NoProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NoProduct.aspx.designer.cs">
+      <DependentUpon>NoProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NoProductCheck.aspx.cs">
+      <DependentUpon>NoProductCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NoProductCheck.aspx.designer.cs">
+      <DependentUpon>NoProductCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderList.aspx.cs">
+      <DependentUpon>OrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderList.aspx.designer.cs">
+      <DependentUpon>OrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\CheckFormat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PDA\CreateStorageNew.aspx.cs">
+      <DependentUpon>CreateStorageNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\CreateStorageNew.aspx.designer.cs">
+      <DependentUpon>CreateStorageNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\DiffListPDA.aspx.cs">
+      <DependentUpon>DiffListPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\DiffListPDA.aspx.designer.cs">
+      <DependentUpon>DiffListPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\InventoryNum.aspx.cs">
+      <DependentUpon>InventoryNum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\InventoryNum.aspx.designer.cs">
+      <DependentUpon>InventoryNum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\InventoryNumOne.aspx.cs">
+      <DependentUpon>InventoryNumOne.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\InventoryNumOne.aspx.designer.cs">
+      <DependentUpon>InventoryNumOne.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\Merge.aspx.cs">
+      <DependentUpon>Merge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\Merge.aspx.designer.cs">
+      <DependentUpon>Merge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\MergeOneQ.aspx.cs">
+      <DependentUpon>MergeOneQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\MergeOneQ.aspx.designer.cs">
+      <DependentUpon>MergeOneQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\MergePart.aspx.cs">
+      <DependentUpon>MergePart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\MergePart.aspx.designer.cs">
+      <DependentUpon>MergePart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\MergePart2.aspx.cs">
+      <DependentUpon>MergePart2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\MergePart2.aspx.designer.cs">
+      <DependentUpon>MergePart2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\PrintStorageNew.aspx.cs">
+      <DependentUpon>PrintStorageNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\PrintStorageNew.aspx.designer.cs">
+      <DependentUpon>PrintStorageNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\SearchBarcode.aspx.cs">
+      <DependentUpon>SearchBarcode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\SearchBarcode.aspx.designer.cs">
+      <DependentUpon>SearchBarcode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\SearchProduct.aspx.cs">
+      <DependentUpon>SearchProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\SearchProduct.aspx.designer.cs">
+      <DependentUpon>SearchProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\SearchProductStock.aspx.cs">
+      <DependentUpon>SearchProductStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\SearchProductStock.aspx.designer.cs">
+      <DependentUpon>SearchProductStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\StorageInfo.aspx.cs">
+      <DependentUpon>StorageInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\StorageInfo.aspx.designer.cs">
+      <DependentUpon>StorageInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\StorageInfoLog.aspx.cs">
+      <DependentUpon>StorageInfoLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\StorageInfoLog.aspx.designer.cs">
+      <DependentUpon>StorageInfoLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\StorageInfoRangeNew.aspx.cs">
+      <DependentUpon>StorageInfoRangeNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\StorageInfoRangeNew.aspx.designer.cs">
+      <DependentUpon>StorageInfoRangeNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\StorageInfoRangeSeries.aspx.cs">
+      <DependentUpon>StorageInfoRangeSeries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\StorageInfoRangeSeries.aspx.designer.cs">
+      <DependentUpon>StorageInfoRangeSeries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\StorageInOutLog.aspx.cs">
+      <DependentUpon>StorageInOutLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\StorageInOutLog.aspx.designer.cs">
+      <DependentUpon>StorageInOutLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\StorageReport.aspx.cs">
+      <DependentUpon>StorageReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\StorageReport.aspx.designer.cs">
+      <DependentUpon>StorageReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\StorageSearchEmpty.aspx.cs">
+      <DependentUpon>StorageSearchEmpty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\StorageSearchEmpty.aspx.designer.cs">
+      <DependentUpon>StorageSearchEmpty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PickCheck.aspx.cs">
+      <DependentUpon>PickCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PickCheck.aspx.designer.cs">
+      <DependentUpon>PickCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Poslib\Activity.cs" />
+    <Compile Include="Poslib\CheckOut.cs" />
+    <Compile Include="Poslib\DB.cs" />
+    <Compile Include="Poslib\Hash.cs" />
+    <Compile Include="Poslib\Invoice.cs" />
+    <Compile Include="Poslib\Log.cs" />
+    <Compile Include="Poslib\Order.cs" />
+    <Compile Include="Poslib\PosNumber.cs" />
+    <Compile Include="Poslib\Print.cs" />
+    <Compile Include="Poslib\Print5.cs" />
+    <Compile Include="Poslib\PrintDayEndReport.cs" />
+    <Compile Include="Poslib\SalesTax.cs" />
+    <Compile Include="Poslib\SiteHelper.cs" />
+    <Compile Include="Poslib\Stock.cs" />
+    <Compile Include="Poslib\SystemSettings.cs" />
+    <Compile Include="Poslib\Transaction.cs" />
+    <Compile Include="Poslib\VipMember.cs" />
+    <Compile Include="pos_checkout_client.aspx.cs">
+      <DependentUpon>pos_checkout_client.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_checkout_client.aspx.designer.cs">
+      <DependentUpon>pos_checkout_client.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_check_out.aspx.cs">
+      <DependentUpon>pos_check_out.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_check_out.aspx.designer.cs">
+      <DependentUpon>pos_check_out.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_check_out2.aspx.cs">
+      <DependentUpon>pos_check_out2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_check_out2.aspx.designer.cs">
+      <DependentUpon>pos_check_out2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_day_end_report.aspx.cs">
+      <DependentUpon>pos_day_end_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_day_end_report.aspx.designer.cs">
+      <DependentUpon>pos_day_end_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_day_end_report2.aspx.cs">
+      <DependentUpon>pos_day_end_report2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_day_end_report2.aspx.designer.cs">
+      <DependentUpon>pos_day_end_report2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_functions.aspx.cs">
+      <DependentUpon>pos_functions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_functions.aspx.designer.cs">
+      <DependentUpon>pos_functions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_number_setting.aspx.cs">
+      <DependentUpon>pos_number_setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_number_setting.aspx.designer.cs">
+      <DependentUpon>pos_number_setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_order_query.aspx.cs">
+      <DependentUpon>pos_order_query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_order_query.aspx.designer.cs">
+      <DependentUpon>pos_order_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_order_query2.aspx.cs">
+      <DependentUpon>pos_order_query2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_order_query2.aspx.designer.cs">
+      <DependentUpon>pos_order_query2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_result.aspx.cs">
+      <DependentUpon>pos_result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_result.aspx.designer.cs">
+      <DependentUpon>pos_result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_SalesTaxReport.aspx.cs">
+      <DependentUpon>pos_SalesTaxReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_SalesTaxReport.aspx.designer.cs">
+      <DependentUpon>pos_SalesTaxReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_sale_analysis.aspx.cs">
+      <DependentUpon>pos_sale_analysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_sale_analysis.aspx.designer.cs">
+      <DependentUpon>pos_sale_analysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_stock.aspx.cs">
+      <DependentUpon>pos_stock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_stock.aspx.designer.cs">
+      <DependentUpon>pos_stock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_stock_query.aspx.cs">
+      <DependentUpon>pos_stock_query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_stock_query.aspx.designer.cs">
+      <DependentUpon>pos_stock_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_transaction.aspx.cs">
+      <DependentUpon>pos_transaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_transaction.aspx.designer.cs">
+      <DependentUpon>pos_transaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pos_vip.aspx.cs">
+      <DependentUpon>pos_vip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pos_vip.aspx.designer.cs">
+      <DependentUpon>pos_vip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintBarCode.aspx.cs">
+      <DependentUpon>PrintBarCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintBarCode.aspx.designer.cs">
+      <DependentUpon>PrintBarCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="printStockList.aspx.cs">
+      <DependentUpon>printStockList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="printStockList.aspx.designer.cs">
+      <DependentUpon>printStockList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privilege.aspx.cs">
+      <DependentUpon>Privilege.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privilege.aspx.designer.cs">
+      <DependentUpon>Privilege.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductChange.aspx.cs">
+      <DependentUpon>ProductChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductChange.aspx.designer.cs">
+      <DependentUpon>ProductChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publics\BaseModel.cs" />
+    <Compile Include="publics\EnumTypes.cs" />
+    <Compile Include="publics\PosPrint.cs" />
+    <Compile Include="publics\Printer.cs" />
+    <Compile Include="publics\Ship.cs" />
+    <Compile Include="publics\ShippingModel.cs" />
+    <Compile Include="AuthManagement.aspx.cs">
+      <DependentUpon>AuthManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthManagement.aspx.designer.cs">
+      <DependentUpon>AuthManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blank.aspx.cs">
+      <DependentUpon>blank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blank.aspx.designer.cs">
+      <DependentUpon>blank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Choice.aspx.cs">
+      <DependentUpon>Choice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Choice.aspx.designer.cs">
+      <DependentUpon>Choice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DiffList.aspx.cs">
+      <DependentUpon>DiffList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DiffList.aspx.designer.cs">
+      <DependentUpon>DiffList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logistics_print2.aspx.cs">
+      <DependentUpon>logistics_print2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logistics_print2.aspx.designer.cs">
+      <DependentUpon>logistics_print2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu_ship_manage.aspx.cs">
+      <DependentUpon>menu_ship_manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu_ship_manage.aspx.designer.cs">
+      <DependentUpon>menu_ship_manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu_storage.aspx.cs">
+      <DependentUpon>menu_storage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu_storage.aspx.designer.cs">
+      <DependentUpon>menu_storage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu_system.aspx.cs">
+      <DependentUpon>menu_system.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu_system.aspx.designer.cs">
+      <DependentUpon>menu_system.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RequireAdd.aspx.cs">
+      <DependentUpon>RequireAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequireAdd.aspx.designer.cs">
+      <DependentUpon>RequireAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequireCheck.aspx.cs">
+      <DependentUpon>RequireCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequireCheck.aspx.designer.cs">
+      <DependentUpon>RequireCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequireList.aspx.cs">
+      <DependentUpon>RequireList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequireList.aspx.designer.cs">
+      <DependentUpon>RequireList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SerilaNameManage.aspx.cs">
+      <DependentUpon>SerilaNameManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SerilaNameManage.aspx.designer.cs">
+      <DependentUpon>SerilaNameManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ADVerifyService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AuthService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\EntranceService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\OBPrintBarcode\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PosPrintBarcode\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SetIP.aspx.cs">
+      <DependentUpon>SetIP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetIP.aspx.designer.cs">
+      <DependentUpon>SetIP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logistics_account.aspx.cs">
+      <DependentUpon>logistics_account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logistics_account.aspx.designer.cs">
+      <DependentUpon>logistics_account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logistics_print.aspx.cs">
+      <DependentUpon>logistics_print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logistics_print.aspx.designer.cs">
+      <DependentUpon>logistics_print.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu.aspx.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu.aspx.designer.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu_BusNO_Invoice.aspx.cs">
+      <DependentUpon>menu_BusNO_Invoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu_BusNO_Invoice.aspx.designer.cs">
+      <DependentUpon>menu_BusNO_Invoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu_shipin.aspx.cs">
+      <DependentUpon>menu_shipin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu_shipin.aspx.designer.cs">
+      <DependentUpon>menu_shipin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu_logistics.aspx.cs">
+      <DependentUpon>menu_logistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu_logistics.aspx.designer.cs">
+      <DependentUpon>menu_logistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu_shipout.aspx.cs">
+      <DependentUpon>menu_shipout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu_shipout.aspx.designer.cs">
+      <DependentUpon>menu_shipout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rmenu_default.aspx.cs">
+      <DependentUpon>rmenu_default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rmenu_default.aspx.designer.cs">
+      <DependentUpon>rmenu_default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShipInTicket.aspx.cs">
+      <DependentUpon>ShipInTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShipInTicket.aspx.designer.cs">
+      <DependentUpon>ShipInTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShipInVerify.aspx.cs">
+      <DependentUpon>ShipInVerify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShipInVerify.aspx.designer.cs">
+      <DependentUpon>ShipInVerify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShipOutTicket.aspx.cs">
+      <DependentUpon>ShipOutTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShipOutTicket.aspx.designer.cs">
+      <DependentUpon>ShipOutTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShipOutVerify.aspx.cs">
+      <DependentUpon>ShipOutVerify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShipOutVerify.aspx.designer.cs">
+      <DependentUpon>ShipOutVerify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingMoreLack.aspx.cs">
+      <DependentUpon>ShippingMoreLack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShippingMoreLack.aspx.designer.cs">
+      <DependentUpon>ShippingMoreLack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShipTicketDetail.aspx.cs">
+      <DependentUpon>ShipTicketDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShipTicketDetail.aspx.designer.cs">
+      <DependentUpon>ShipTicketDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport.aspx.cs">
+      <DependentUpon>StockReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockReport.aspx.designer.cs">
+      <DependentUpon>StockReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StoreFloatList.aspx.cs">
+      <DependentUpon>StoreFloatList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StoreFloatList.aspx.designer.cs">
+      <DependentUpon>StoreFloatList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemInfo.aspx.cs">
+      <DependentUpon>SystemInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemInfo.aspx.designer.cs">
+      <DependentUpon>SystemInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemOnlineList.aspx.cs">
+      <DependentUpon>SystemOnlineList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemOnlineList.aspx.designer.cs">
+      <DependentUpon>SystemOnlineList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemOnlineReport.aspx.cs">
+      <DependentUpon>SystemOnlineReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemOnlineReport.aspx.designer.cs">
+      <DependentUpon>SystemOnlineReport.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="IO\Printer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ADVerifyService\" />
+    <WCFMetadataStorage Include="Service References\AuthService\" />
+    <WCFMetadataStorage Include="Service References\EntranceService\" />
+    <WCFMetadataStorage Include="Service References\OBPrintBarcode\" />
+    <WCFMetadataStorage Include="Service References\PosPrintBarcode\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\POS_Library\POS_Library\POS_Library.csproj">
+      <Project>{2197d3c3-d677-4020-b749-465694584c0f}</Project>
+      <Name>POS_Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55607</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

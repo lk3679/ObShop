@@ -1,0 +1,16 @@
+table.print {
+  border-color: black;
+  border-width: 0px 0px 1px 1px;
+  border-style: solid;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  empty-cells: show;
+}
+
+table.print td {
+  border-color: black;
+  border-width: 1px 1px 0px 0px;
+  border-style: solid;
+}
+
+div.none { display:none }

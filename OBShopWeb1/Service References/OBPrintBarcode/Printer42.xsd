@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/OrangeBear.IO.Printer.BarcodePrinter" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/OrangeBear.IO.Printer.BarcodePrinter" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://observice.obdesign.com.tw/BarcodePrinter/IO/Printer/BarcodePrinter/Printer.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:simpleType name="PrintResult">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Error" />
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="PrinterError" />
+      <xs:enumeration value="PrinterErrorPath" />
+      <xs:enumeration value="IISException" />
+      <xs:enumeration value="ClinetIsNull" />
+      <xs:enumeration value="NoData" />
+      <xs:enumeration value="APPsException" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PrintResult" nillable="true" type="tns:PrintResult" />
+  <xs:complexType name="Server">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Printers" nillable="true" type="tns:ArrayOfPrinterObj" />
+      <xs:element minOccurs="0" name="ServerID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Server" nillable="true" type="tns:Server" />
+  <xs:complexType name="ArrayOfPrinterObj">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PrinterObj" type="tns:PrinterObj" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPrinterObj" nillable="true" type="tns:ArrayOfPrinterObj" />
+  <xs:complexType name="PrinterObj">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Printer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrinterID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PrinterObj" nillable="true" type="tns:PrinterObj" />
+</xs:schema>

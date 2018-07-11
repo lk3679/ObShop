@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ac27db6c-8098-4ad0-b0b0-9d0d2283e66c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://observice.obdesign.com.tw/AD/Security/Auth.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Auth.xsd" MetadataType="Schema" ID="e74c078d-c2b8-4125-bc0e-1ede67862239" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Security/Auth.svc?xsd=xsd2" />
+    <MetadataFile FileName="Auth1.xsd" MetadataType="Schema" ID="932fb571-fa1b-4b1e-b4f5-5c73b87f7c8e" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Security/Auth.svc?xsd=xsd1" />
+    <MetadataFile FileName="Auth2.xsd" MetadataType="Schema" ID="11bb4476-1293-4c22-baea-03a7365c283b" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Security/Auth.svc?xsd=xsd0" />
+    <MetadataFile FileName="Auth.wsdl" MetadataType="Wsdl" ID="d894f2c4-4420-4d5e-9512-9485403ca8ed" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Security/Auth.svc?wsdl" />
+    <MetadataFile FileName="Auth.disco" MetadataType="Disco" ID="9d593fbe-833e-4657-90d8-4c6d8beeab3d" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Security/Auth.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

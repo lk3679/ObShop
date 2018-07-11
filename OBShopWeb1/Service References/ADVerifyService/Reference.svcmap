@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="49da3c0b-ccfa-4403-a5fd-56dda2314336" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://observice.obdesign.com.tw/AD/Security/ADVerify.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ADVerify.wsdl" MetadataType="Wsdl" ID="c00d42c5-139c-4439-878e-12ff44078585" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Security/ADVerify.svc?wsdl" />
+    <MetadataFile FileName="ADVerify.disco" MetadataType="Disco" ID="032c555e-1541-4e9f-9b73-4aa1dbe80cfb" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Security/ADVerify.svc?disco" />
+    <MetadataFile FileName="ADVerify.xsd" MetadataType="Schema" ID="7d0e8e3d-7850-4565-a5f1-685bc1ddfe97" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Security/ADVerify.svc?xsd=xsd1" />
+    <MetadataFile FileName="ADVerify1.xsd" MetadataType="Schema" ID="e30e37d1-a51c-4f6a-9d91-ee9a8be74528" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Security/ADVerify.svc?xsd=xsd2" />
+    <MetadataFile FileName="ADVerify2.xsd" MetadataType="Schema" ID="9ceca53a-94d9-4506-b06f-759f190fd018" SourceId="1" SourceUrl="http://observice.obdesign.com.tw/AD/Security/ADVerify.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WmsArea name="儲位所在地">
+  <PosClient>
+    <Area>4</Area>
+    <ShopType>8</ShopType>
+    <PrintPageSize>50</PrintPageSize>
+    <changeColor>#DDDDDD</changeColor>
+    <backgroundColor>#FFFBD6</backgroundColor>
+  </PosClient>
+</WmsArea>
+
+
+

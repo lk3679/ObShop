@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExceptionSource</name>
+    </assembly>
+    <members>
+        <member name="T:Data.ExceptionSource.StackTraceMSG">
+            <summary>
+            模組
+            </summary>
+        </member>
+        <member name="T:Data.ExceptionSource.ExStructure">
+            <summary>
+            主架構
+            </summary>
+        </member>
+        <member name="F:Data.ExceptionSource.ExStructure.ExceptionBehavior">
+            <summary>
+            宣告界面
+            </summary>
+        </member>
+        <member name="M:Data.ExceptionSource.ExStructure.GetErrorMsg(System.Exception)">
+            <summary>
+            回傳Error字串
+            </summary>
+            <param name="ex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.ExceptionSource.ExStructure.GetErrorMsgList(System.Exception)">
+            <summary>
+            回傳Errorlist
+            </summary>
+            <param name="ex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.ExceptionSource.ExStructure.PerformClassName(System.Exception,System.Int32)">
+            <summary>
+            View呼叫層級CalssName
+            </summary>
+            <param name="ex"></param>
+            <param name="level"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.ExceptionSource.ExStructure.PerformDLName(System.Exception,System.Int32)">
+            <summary>
+            View呼叫層級DLLName
+            </summary>
+            <param name="ex"></param>
+            <param name="level"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.ExceptionSource.ExStructure.PerformLine(System.Exception,System.Int32)">
+            <summary>
+            View呼叫層級Line
+            </summary>
+            <param name="ex"></param>
+            <param name="level"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.ExceptionSource.ExStructure.PerfromMethodName(System.Exception,System.Int32)">
+            <summary>
+            View呼叫層級MethodName
+            </summary>
+            <param name="ex"></param>
+            <param name="level"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.ExceptionSource.ExStructure.StackErrorMsg(System.Exception,System.Int32)">
+            <summary>
+            將Error字串組成錯誤訊息放入ex.Data.Add
+            </summary>
+            <param name="ex"></param>
+            <param name="level"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.ExceptionSource.StackTraceMSG.#ctor">
+            <summary>
+            建構式
+            </summary>
+        </member>
+        <member name="M:Data.ExceptionSource.StackTraceMSG.GetErrorMsg(System.Exception)">
+            <summary>
+            回傳Error字串
+            </summary>
+            <param name="ex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.ExceptionSource.StackTraceMSG.GetErrorMsgList(System.Exception)">
+            <summary>
+            回傳ErrorList
+            </summary>
+            <param name="ex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.ExceptionSource.StackTraceMSG.StackErrorMsg(System.Exception,System.Int32)">
+            <summary>
+            將Error字串組成錯誤訊息放入ex.Data.Add
+            </summary>
+            <param name="ex">ex</param>
+            <param name="level">0=>Upperlayer , 1=>Thelayer</param>
+            <returns></returns>
+        </member>
+        <member name="T:Data.ExceptionSource.IException">
+            <summary>
+            介面
+            </summary>
+        </member>
+        <member name="M:Data.ExceptionSource.IException.ErrorClassName(System.Exception,System.Int32)">
+            <summary>
+            Calss名稱介面
+            </summary>
+            <param name="ex">ex</param>
+            <param name="level">0=>Upperlayer , 1=>Thelayer</param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.ExceptionSource.IException.ErrorDLName(System.Exception,System.Int32)">
+            <summary>
+            DLL介面
+            </summary>
+            <param name="ex">ex</param>
+            <param name="level">0=>Upperlayer , 1=>Thelayer</param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.ExceptionSource.IException.ErrorLine(System.Exception,System.Int32)">
+            <summary>
+            行號介面
+            </summary>
+            <param name="ex">ex</param>
+            <param name="level">0=>Upperlayer , 1=>Thelayer</param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.ExceptionSource.IException.ErrorMathodName(System.Exception,System.Int32)">
+            <summary>
+            Mathod名稱介面
+            </summary>
+            <param name="ex">ex</param>
+            <param name="level">0=>Upperlayer , 1=>Thelayer</param>
+            <returns></returns>
+        </member>
+        <member name="T:Data.ExceptionSource.ExceptionFn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Data.ExceptionSource.ExceptionFn.ErrorClassName(System.Exception,System.Int32)">
+            <summary>
+            Calss名稱
+            </summary>
+            <param name="ex">ex</param>
+            <param name="level">0=>Upperlayer , 1=>Thelayer</param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.ExceptionSource.ExceptionFn.ErrorDLName(System.Exception,System.Int32)">
+            <summary>
+            DLL
+            </summary>
+            <param name="ex">ex</param>
+            <param name="level">0=>Upperlayer , 1=>Thelayer</param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.ExceptionSource.ExceptionFn.ErrorLine(System.Exception,System.Int32)">
+            <summary>
+            行號
+            </summary>
+            <param name="ex">ex</param>
+            <param name="level">0=>Upperlayer , 1=>Thelayer</param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.ExceptionSource.ExceptionFn.ErrorMathodName(System.Exception,System.Int32)">
+            <summary>
+            Mathod名稱
+            </summary>
+            <param name="ex">ex</param>
+            <param name="level">0=>Upperlayer , 1=>Thelayer</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+此檔案是由您 Web 專案的發行/封裝處理程序所使用。您可以編輯此 MSBuild 檔案，
+以自訂此處理程序的行為。若要深入了解，請造訪 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2015-03-16T16:54:02.8682595+08:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>D:\OBNnew</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ActivitiesSetting.aspx">
+      <publishTime>07/31/2015 11:59:00</publishTime>
+    </File>
+    <File Include="ActivityRight.xml">
+      <publishTime>07/31/2015 11:17:19</publishTime>
+    </File>
+    <File Include="AddRequireList.aspx">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="AuthManagement.aspx">
+      <publishTime>12/24/2014 11:30:26</publishTime>
+    </File>
+    <File Include="AuthPro.aspx">
+      <publishTime>07/13/2015 10:28:57</publishTime>
+    </File>
+    <File Include="AuthProFunction.aspx">
+      <publishTime>07/13/2015 10:28:57</publishTime>
+    </File>
+    <File Include="AuthProUser.aspx">
+      <publishTime>07/13/2015 10:28:57</publishTime>
+    </File>
+    <File Include="Barcode.aspx">
+      <publishTime>01/19/2015 11:17:43</publishTime>
+    </File>
+    <File Include="bin/Aes.dll">
+      <publishTime>12/23/2014 18:48:41</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>12/24/2014 11:30:20</publishTime>
+    </File>
+    <File Include="bin/BarcodeLib.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="bin/ExceptionSource.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="bin/Ionic.Zip.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="bin/itextsharp.xmlworker.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="bin/itextsharp.xtra.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="bin/NPOI.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="bin/OBShopWeb.dll">
+      <publishTime>08/28/2015 14:27:01</publishTime>
+    </File>
+    <File Include="bin/POS_Library.dll">
+      <publishTime>08/28/2015 14:27:00</publishTime>
+    </File>
+    <File Include="blank.aspx">
+      <publishTime>01/26/2015 19:29:53</publishTime>
+    </File>
+    <File Include="CheckMachineStatus.aspx">
+      <publishTime>01/19/2015 17:10:02</publishTime>
+    </File>
+    <File Include="Choice.aspx">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="ConnectionString.xml">
+      <publishTime>08/28/2015 14:40:34</publishTime>
+    </File>
+    <File Include="CreateDoc.aspx">
+      <publishTime>01/07/2015 14:33:41</publishTime>
+    </File>
+    <File Include="css/bootstrap-datepicker.css">
+      <publishTime>09/22/2014 10:29:42</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>09/22/2014 10:29:42</publishTime>
+    </File>
+    <File Include="css/images/pos_for_ConsumerBG.jpg">
+      <publishTime>01/20/2015 14:50:15</publishTime>
+    </File>
+    <File Include="css/images/ui-bg_diagonals-thick_18_b81900_40x40.png">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/images/ui-bg_diagonals-thick_20_666666_40x40.png">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/images/ui-bg_flat_10_000000_40x100.png">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/images/ui-bg_glass_100_f6f6f6_1x400.png">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/images/ui-bg_glass_100_fdf5ce_1x400.png">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/images/ui-bg_gloss-wave_35_f6a828_500x100.png">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/images/ui-bg_highlight-soft_75_ffe45c_1x100.png">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/images/ui-icons_222222_256x240.png">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/images/ui-icons_228ef1_256x240.png">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/images/ui-icons_ef8c08_256x240.png">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/images/ui-icons_ffd27a_256x240.png">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/images/ui-icons_ffffff_256x240.png">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/jquery-ui.css">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/jquery-ui.theme.min.css">
+      <publishTime>12/31/2014 11:35:57</publishTime>
+    </File>
+    <File Include="css/layout.css">
+      <publishTime>06/08/2015 15:13:35</publishTime>
+    </File>
+    <File Include="css/orangebear.css">
+      <publishTime>12/24/2014 11:30:23</publishTime>
+    </File>
+    <File Include="css/POS_Consumer.css">
+      <publishTime>03/18/2015 14:23:40</publishTime>
+    </File>
+    <File Include="css/POS_style.css">
+      <publishTime>07/09/2015 15:32:52</publishTime>
+    </File>
+    <File Include="css/Vip_style.css">
+      <publishTime>04/28/2015 11:36:29</publishTime>
+    </File>
+    <File Include="day_end_report.aspx">
+      <publishTime>03/16/2015 16:54:02</publishTime>
+    </File>
+    <File Include="day_end_report2.aspx">
+      <publishTime>03/16/2015 16:54:02</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>02/09/2015 16:27:50</publishTime>
+    </File>
+    <File Include="DiffHandle.aspx">
+      <publishTime>07/13/2015 10:28:57</publishTime>
+    </File>
+    <File Include="DiffList.aspx">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="DLLlib/Aes.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="DLLlib/BarcodeLib.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="DLLlib/DataBaseSource.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="DLLlib/ExceptionSource.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="DLLlib/Ionic.Zip.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="DLLlib/itextsharp.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="DLLlib/itextsharp.xmlworker.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="DLLlib/itextsharp.xtra.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="DLLlib/Newtonsoft.Json.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="DLLlib/NPOI.dll">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="GetSerailProductByProductID.aspx">
+      <publishTime>01/26/2015 15:50:07</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/24/2014 11:30:25</publishTime>
+    </File>
+    <File Include="Image/1024x400.jpg">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="Image/backspace_bg.png">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="Image/Calendar.png">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="Image/close.png">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="Image/Delete.jpg">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="Image/Delete_over.jpg">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="Image/enter_bg.png">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="Image/Gcha.png">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="Image/loading2.gif">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="Image/loading3.gif">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="Image/loading4.gif">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="Image/logo.jpg">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="Image/NoProductMailSample.html">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="Image/OBLogo.jpg">
+      <publishTime>01/15/2015 15:44:16</publishTime>
+    </File>
+    <File Include="Image/obshop.jpg">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="Image/obshop_small.jpg">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="Image/pos_for_ConsumerBG-2.jpg">
+      <publishTime>02/11/2015 15:50:41</publishTime>
+    </File>
+    <File Include="Image/pos_for_ConsumerBG.jpg">
+      <publishTime>08/14/2015 17:28:49</publishTime>
+    </File>
+    <File Include="Image/門市系統logo.png">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="index.aspx">
+      <publishTime>01/26/2015 19:29:53</publishTime>
+    </File>
+    <File Include="InvoiceAudit.aspx">
+      <publishTime>01/30/2015 12:05:50</publishTime>
+    </File>
+    <File Include="InvoiceInfo.config">
+      <publishTime>06/09/2015 15:16:02</publishTime>
+    </File>
+    <File Include="InvoiceInfo.xml">
+      <publishTime>08/13/2015 10:49:19</publishTime>
+    </File>
+    <File Include="iTextSharp/itextsharp.dll">
+      <publishTime>12/24/2014 11:30:20</publishTime>
+    </File>
+    <File Include="iTextSharp/itextsharp.xtra.dll">
+      <publishTime>12/24/2014 11:30:20</publishTime>
+    </File>
+    <File Include="js/bootstrap-datepicker.js">
+      <publishTime>09/22/2014 10:29:42</publishTime>
+    </File>
+    <File Include="js/bootstrap.min.js">
+      <publishTime>09/22/2014 10:29:42</publishTime>
+    </File>
+    <File Include="js/jquery-1.9.1.js">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="js/jquery-ui.min.js">
+      <publishTime>12/31/2014 11:35:32</publishTime>
+    </File>
+    <File Include="js/jquery.blockUI.js">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="js/jquery.js">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="js/jquery.paulund_modal_box.js">
+      <publishTime>01/21/2015 10:49:49</publishTime>
+    </File>
+    <File Include="js/jquery.signalR-2.0.3.js">
+      <publishTime>01/30/2015 18:10:59</publishTime>
+    </File>
+    <File Include="js/json2.js">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="js/lightbar.js">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="js/lightbar2.js">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="js/locales/bootstrap-datepicker.zh-TW.js">
+      <publishTime>09/22/2014 10:29:42</publishTime>
+    </File>
+    <File Include="js/lockkey.js">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="js/menu.js">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="js/O_o_mini.js">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="js/search.js">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="js/utils.js">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="layout.css">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="logisticsScoreSetting.aspx">
+      <publishTime>12/24/2014 11:30:25</publishTime>
+    </File>
+    <File Include="logistics_account.aspx">
+      <publishTime>12/24/2014 11:30:26</publishTime>
+    </File>
+    <File Include="logistics_print.aspx">
+      <publishTime>12/24/2014 11:30:20</publishTime>
+    </File>
+    <File Include="logistics_print2.aspx">
+      <publishTime>01/07/2015 14:33:41</publishTime>
+    </File>
+    <File Include="logout.aspx">
+      <publishTime>01/07/2015 14:33:41</publishTime>
+    </File>
+    <File Include="menu.aspx">
+      <publishTime>01/19/2015 11:17:43</publishTime>
+    </File>
+    <File Include="MenuHideList.aspx">
+      <publishTime>02/09/2015 16:27:50</publishTime>
+    </File>
+    <File Include="menu_BusNO_Invoice.aspx">
+      <publishTime>12/24/2014 11:30:25</publishTime>
+    </File>
+    <File Include="menu_logistics.aspx">
+      <publishTime>12/24/2014 11:30:25</publishTime>
+    </File>
+    <File Include="menu_shipin.aspx">
+      <publishTime>01/26/2015 19:29:53</publishTime>
+    </File>
+    <File Include="menu_shipout.aspx">
+      <publishTime>01/19/2015 11:17:43</publishTime>
+    </File>
+    <File Include="menu_ship_manage.aspx">
+      <publishTime>12/24/2014 11:30:25</publishTime>
+    </File>
+    <File Include="menu_ship_manage1.aspx">
+      <publishTime>08/03/2015 11:34:09</publishTime>
+    </File>
+    <File Include="menu_ship_manage2.aspx">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="menu_storage.aspx">
+      <publishTime>12/24/2014 11:30:26</publishTime>
+    </File>
+    <File Include="menu_storage1.aspx">
+      <publishTime>12/24/2014 11:30:26</publishTime>
+    </File>
+    <File Include="menu_storage2.aspx">
+      <publishTime>01/14/2015 10:04:23</publishTime>
+    </File>
+    <File Include="menu_system.aspx">
+      <publishTime>02/09/2015 16:27:50</publishTime>
+    </File>
+    <File Include="NoProduct.aspx">
+      <publishTime>12/24/2014 11:30:23</publishTime>
+    </File>
+    <File Include="NoProductCheck.aspx">
+      <publishTime>12/24/2014 15:20:55</publishTime>
+    </File>
+    <File Include="ob.jpg">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="OrderList.aspx">
+      <publishTime>07/13/2015 10:28:57</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/27/2014 16:37:35</publishTime>
+    </File>
+    <File Include="PathTest.aspx">
+      <publishTime>01/09/2015 14:10:05</publishTime>
+    </File>
+    <File Include="PDA/CreateStorageNew.aspx">
+      <publishTime>02/09/2015 16:27:50</publishTime>
+    </File>
+    <File Include="PDA/DiffListPDA.aspx">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="PDA/InventoryNum.aspx">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="PDA/InventoryNumOne.aspx">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="PDA/Merge.aspx">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="PDA/MergeOneQ.aspx">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="PDA/MergePart.aspx">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="PDA/MergePart2.aspx">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="PDA/PrintStorageNew.aspx">
+      <publishTime>02/09/2015 16:27:50</publishTime>
+    </File>
+    <File Include="PDA/SearchBarcode.aspx">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="PDA/SearchProduct.aspx">
+      <publishTime>01/09/2015 12:18:26</publishTime>
+    </File>
+    <File Include="PDA/SearchProductStock.aspx">
+      <publishTime>01/09/2015 12:18:26</publishTime>
+    </File>
+    <File Include="PDA/StorageInfo.aspx">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="PDA/StorageInfoLog.aspx">
+      <publishTime>07/24/2015 11:22:08</publishTime>
+    </File>
+    <File Include="PDA/StorageInfoRangeNew.aspx">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="PDA/StorageInfoRangeSeries.aspx">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="PDA/StorageInOutLog.aspx">
+      <publishTime>07/13/2015 10:28:56</publishTime>
+    </File>
+    <File Include="PDA/StorageReport.aspx">
+      <publishTime>07/13/2015 10:28:56</publishTime>
+    </File>
+    <File Include="PDA/StorageSearchEmpty.aspx">
+      <publishTime>12/24/2014 11:30:22</publishTime>
+    </File>
+    <File Include="PickCheck.aspx">
+      <publishTime>12/24/2014 11:30:25</publishTime>
+    </File>
+    <File Include="pos_checkout_client.aspx">
+      <publishTime>06/02/2015 16:02:37</publishTime>
+    </File>
+    <File Include="pos_check_out.aspx">
+      <publishTime>08/28/2015 14:26:06</publishTime>
+    </File>
+    <File Include="pos_check_out2.aspx">
+      <publishTime>03/12/2015 11:24:28</publishTime>
+    </File>
+    <File Include="pos_day_end_report.aspx">
+      <publishTime>08/04/2015 15:07:42</publishTime>
+    </File>
+    <File Include="pos_day_end_report2.aspx">
+      <publishTime>03/10/2015 16:43:21</publishTime>
+    </File>
+    <File Include="pos_functions.aspx">
+      <publishTime>01/20/2015 09:57:53</publishTime>
+    </File>
+    <File Include="pos_number_setting.aspx">
+      <publishTime>01/14/2015 12:19:00</publishTime>
+    </File>
+    <File Include="pos_order_query.aspx">
+      <publishTime>08/17/2015 17:01:26</publishTime>
+    </File>
+    <File Include="pos_order_query2.aspx">
+      <publishTime>06/22/2015 17:09:52</publishTime>
+    </File>
+    <File Include="pos_result.aspx">
+      <publishTime>07/24/2015 17:23:51</publishTime>
+    </File>
+    <File Include="pos_SalesTaxReport.aspx">
+      <publishTime>05/05/2015 15:36:22</publishTime>
+    </File>
+    <File Include="pos_sale_analysis.aspx">
+      <publishTime>03/13/2015 10:51:45</publishTime>
+    </File>
+    <File Include="pos_stock.aspx">
+      <publishTime>08/04/2015 11:59:08</publishTime>
+    </File>
+    <File Include="pos_stock_query.aspx">
+      <publishTime>08/04/2015 10:59:46</publishTime>
+    </File>
+    <File Include="pos_transaction.aspx">
+      <publishTime>01/26/2015 19:32:17</publishTime>
+    </File>
+    <File Include="pos_vip.aspx">
+      <publishTime>08/17/2015 10:09:21</publishTime>
+    </File>
+    <File Include="PrintBarCode.aspx">
+      <publishTime>01/26/2015 19:29:53</publishTime>
+    </File>
+    <File Include="printStockList.aspx">
+      <publishTime>01/07/2015 10:36:00</publishTime>
+    </File>
+    <File Include="Privilege.aspx">
+      <publishTime>02/13/2015 16:48:03</publishTime>
+    </File>
+    <File Include="ProductChange.aspx">
+      <publishTime>01/26/2015 19:29:53</publishTime>
+    </File>
+    <File Include="RequireAdd.aspx">
+      <publishTime>08/12/2015 11:19:59</publishTime>
+    </File>
+    <File Include="RequireCheck.aspx">
+      <publishTime>02/13/2015 16:48:03</publishTime>
+    </File>
+    <File Include="RequireList.aspx">
+      <publishTime>02/13/2015 16:48:03</publishTime>
+    </File>
+    <File Include="rmenu_default.aspx">
+      <publishTime>01/26/2015 19:29:53</publishTime>
+    </File>
+    <File Include="SerilaNameManage.aspx">
+      <publishTime>06/15/2015 17:18:23</publishTime>
+    </File>
+    <File Include="Service References/OBPrintBarcode/OBShopWeb.OBPrintBarcode.PrintResult.datasource">
+      <publishTime>01/26/2015 20:12:21</publishTime>
+    </File>
+    <File Include="Service References/OBPrintStation/configuration.svcinfo">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="Service References/OBPrintStation/configuration91.svcinfo">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="Service References/OBPrintStation/OBShopWeb.OBPrintStation.PrintResult.datasource">
+      <publishTime>01/08/2015 15:26:53</publishTime>
+    </File>
+    <File Include="Service References/OBPrintStation/OBShopWeb.OBPrintStation.TransactionResult.datasource">
+      <publishTime>01/08/2015 15:26:53</publishTime>
+    </File>
+    <File Include="Service References/OBPrintStation/Printer.disco">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="Service References/OBPrintStation/Printer.wsdl">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="Service References/OBPrintStation/Printer.xsd">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="Service References/OBPrintStation/Printer1.xsd">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="Service References/OBPrintStation/Printer2.xsd">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="Service References/OBPrintStation/Printer3.xsd">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="Service References/OBPrintStation/Reference.cs">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="Service References/OBPrintStation/Reference.svcmap">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="Service References/PosPrintBarcode/OBShopWeb.PosPrintBarcode.PrintResult.datasource">
+      <publishTime>01/13/2015 15:42:46</publishTime>
+    </File>
+    <File Include="Service References/PosPrintStation/OBShopWeb.PosPrintStation.PrintResult.datasource">
+      <publishTime>01/13/2015 15:19:35</publishTime>
+    </File>
+    <File Include="Service References/PosPrintStation/OBShopWeb.PosPrintStation.TransactionResult.datasource">
+      <publishTime>01/13/2015 15:19:35</publishTime>
+    </File>
+    <File Include="SetIP.aspx">
+      <publishTime>01/19/2015 11:17:43</publishTime>
+    </File>
+    <File Include="ShipInTicket.aspx">
+      <publishTime>07/13/2015 10:28:56</publishTime>
+    </File>
+    <File Include="ShipInVerify.aspx">
+      <publishTime>01/26/2015 19:29:53</publishTime>
+    </File>
+    <File Include="ShipOutTicket.aspx">
+      <publishTime>01/21/2015 16:37:02</publishTime>
+    </File>
+    <File Include="ShipOutVerify.aspx">
+      <publishTime>12/24/2014 11:30:20</publishTime>
+    </File>
+    <File Include="ShippingMoreLack.aspx">
+      <publishTime>12/24/2014 11:30:21</publishTime>
+    </File>
+    <File Include="ShipTicketDetail.aspx">
+      <publishTime>01/26/2015 19:29:53</publishTime>
+    </File>
+    <File Include="StockReport.aspx">
+      <publishTime>02/09/2015 16:27:50</publishTime>
+    </File>
+    <File Include="StoreFloatList.aspx">
+      <publishTime>07/30/2015 17:23:11</publishTime>
+    </File>
+    <File Include="StoreFloats.xml">
+      <publishTime>08/14/2015 18:05:56</publishTime>
+    </File>
+    <File Include="SystemInfo.aspx">
+      <publishTime>01/26/2015 19:29:53</publishTime>
+    </File>
+    <File Include="SystemOnlineList.aspx">
+      <publishTime>08/18/2015 10:09:58</publishTime>
+    </File>
+    <File Include="SystemOnlineReport.aspx">
+      <publishTime>01/15/2015 14:30:12</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/28/2015 14:27:05</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

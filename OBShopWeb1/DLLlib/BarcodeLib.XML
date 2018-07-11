@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BarcodeLib</name>
+    </assembly>
+    <members>
+        <member name="M:BarcodeLib.Symbologies.EAN8.Encode_EAN8">
+            <summary>
+            Encode the raw data using the EAN-8 algorithm.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.ITF14.Encode_ITF14">
+            <summary>
+            Encode the raw data using the ITF-14 algorithm.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.Code39.#ctor(System.String)">
+            <summary>
+            Encodes with Code39.
+            </summary>
+            <param name="input">Data to encode.</param>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.Code39.#ctor(System.String,System.Boolean)">
+            <summary>
+            Encodes with Code39.
+            </summary>
+            <param name="input">Data to encode.</param>
+            <param name="AllowExtended">Allow Extended Code 39 (Full Ascii mode).</param>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.Code39.Encode_Code39">
+            <summary>
+            Encode the raw data using the Code 39 algorithm.
+            </summary>
+        </member>
+        <member name="T:BarcodeLib.TYPE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BarcodeLib.SaveTypes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BarcodeLib.AlignmentPositions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BarcodeLib.LabelPositions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BarcodeLib.Barcode">
+            <summary>
+            This class was designed to give developers and easy way to generate a barcode image from a string of data.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Barcode.#ctor">
+            <summary>
+            Default constructor.  Does not populate the raw data.  MUST be done via the RawData property before encoding.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Barcode.#ctor(System.String)">
+            <summary>
+            Constructor. Populates the raw data. No whitespace will be added before or after the barcode.
+            </summary>
+            <param name="data">String to be encoded.</param>
+        </member>
+        <member name="M:BarcodeLib.Barcode.#ctor(System.String,BarcodeLib.TYPE)">
+            <summary>
+            ForeColor
+            </summary>
+            <param name="data"></param>
+            <param name="iType"></param>
+        </member>
+        <member name="M:BarcodeLib.Barcode.Encode(BarcodeLib.TYPE,System.String,System.Int32,System.Int32)">
+            <summary>
+            Encodes the raw data into binary form representing bars and spaces.  Also generates an Image of the barcode.
+            </summary>
+            <param name="iType">Type of encoding to use.</param>
+            <param name="StringToEncode">Raw data to encode.</param>
+            <param name="Width">Width of the resulting barcode.(pixels)</param>
+            <param name="Height">Height of the resulting barcode.(pixels)</param>
+            <returns>Image representing the barcode.</returns>
+        </member>
+        <member name="M:BarcodeLib.Barcode.Encode(BarcodeLib.TYPE,System.String,System.Drawing.Color,System.Drawing.Color,System.Int32,System.Int32)">
+            <summary>
+            Encodes the raw data into binary form representing bars and spaces.  Also generates an Image of the barcode.
+            </summary>
+            <param name="iType">Type of encoding to use.</param>
+            <param name="StringToEncode">Raw data to encode.</param>
+            <param name="ForeColor">Fore color</param>
+            <param name="BackColor">Background color</param>
+            <param name="Width">Width of the resulting barcode.(pixels)</param>
+            <param name="Height">Height of the resulting barcode.(pixels)</param>
+            <returns>Image representing the barcode.</returns>
+        </member>
+        <member name="M:BarcodeLib.Barcode.Encode(BarcodeLib.TYPE,System.String,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            Encodes the raw data into binary form representing bars and spaces.  Also generates an Image of the barcode.
+            </summary>
+            <param name="iType">Type of encoding to use.</param>
+            <param name="StringToEncode">Raw data to encode.</param>
+            <param name="ForeColor">Fore color</param>
+            <param name="BackColor">Background color</param>
+            <returns>Image representing the barcode.</returns>
+        </member>
+        <member name="M:BarcodeLib.Barcode.Encode(BarcodeLib.TYPE,System.String)">
+            <summary>
+            Encodes the raw data into binary form representing bars and spaces.  Also generates an Image of the barcode.
+            </summary>
+            <param name="iType">Type of encoding to use.</param>
+            <param name="StringToEncode">Raw data to encode.</param>
+            <returns>Image representing the barcode.</returns>
+        </member>
+        <member name="M:BarcodeLib.Barcode.Encode(BarcodeLib.TYPE)">
+            <summary>
+            Encodes the raw data into binary form representing bars and spaces.  Also generates an Image of the barcode.
+            </summary>
+            <param name="iType">Type of encoding to use.</param>
+        </member>
+        <member name="M:BarcodeLib.Barcode.Encode">
+            <summary>
+            Encodes the raw data into binary form representing bars and spaces.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Barcode.Generate_Image">
+            <summary>
+            Gets a bitmap representation of the encoded data.
+            </summary>
+            <returns>Bitmap of encoded value.</returns>
+        </member>
+        <member name="M:BarcodeLib.Barcode.GetImageData(BarcodeLib.SaveTypes)">
+            <summary>
+            Gets the bytes that represent the image.
+            </summary>
+            <param name="savetype">File type to put the data in before returning the bytes.</param>
+            <returns>Bytes representing the encoded image.</returns>
+        </member>
+        <member name="M:BarcodeLib.Barcode.SaveImage(System.String,BarcodeLib.SaveTypes)">
+            <summary>
+            Saves an encoded image to a specified file and type.
+            </summary>
+            <param name="Filename">Filename to save to.</param>
+            <param name="FileType">Format to use.</param>
+        </member>
+        <member name="M:BarcodeLib.Barcode.SaveImage(System.IO.Stream,BarcodeLib.SaveTypes)">
+            <summary>
+            Saves an encoded image to a specified stream.
+            </summary>
+            <param name="stream">Stream to write image to.</param>
+            <param name="FileType">Format to use.</param>
+        </member>
+        <member name="M:BarcodeLib.Barcode.GetSizeOfImage(System.Double@,System.Double@,System.Boolean)">
+            <summary>
+            Returns the size of the EncodedImage in real world coordinates (millimeters or inches).
+            </summary>
+            <param name="Width">Width of the image in the specified coordinates.</param>
+            <param name="Height">Height of the image in the specified coordinates.</param>
+            <param name="Metric">Millimeters if true, otherwise Inches.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BarcodeLib.Barcode.Label_UPCA(System.Drawing.Image)">
+            <summary>
+            Draws Label for UPC-A barcodes (NOT COMPLETE)
+            </summary>
+            <param name="img"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BarcodeLib.Barcode.DoEncode(BarcodeLib.TYPE,System.String)">
+            <summary>
+            Encodes the raw data into binary form representing bars and spaces.  Also generates an Image of the barcode.
+            </summary>
+            <param name="iType">Type of encoding to use.</param>
+            <param name="Data">Raw data to encode.</param>
+            <returns>Image representing the barcode.</returns>
+        </member>
+        <member name="M:BarcodeLib.Barcode.DoEncode(BarcodeLib.TYPE,System.String,System.String@)">
+            <summary>
+            Encodes the raw data into binary form representing bars and spaces.  Also generates an Image of the barcode.
+            </summary>
+            <param name="iType">Type of encoding to use.</param>
+            <param name="Data">Raw data to encode.</param>
+            <param name="XML">XML representation of the data and the image of the barcode.</param>
+            <returns>Image representing the barcode.</returns>
+        </member>
+        <member name="M:BarcodeLib.Barcode.DoEncode(BarcodeLib.TYPE,System.String,System.Boolean)">
+            <summary>
+            Encodes the raw data into binary form representing bars and spaces.  Also generates an Image of the barcode.
+            </summary>
+            <param name="iType">Type of encoding to use.</param>
+            <param name="Data">Raw data to encode.</param>
+            <param name="IncludeLabel">Include the label at the bottom of the image with data encoded.</param>
+            <returns>Image representing the barcode.</returns>
+        </member>
+        <member name="M:BarcodeLib.Barcode.DoEncode(BarcodeLib.TYPE,System.String,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            Encodes the raw data into binary form representing bars and spaces.  Also generates an Image of the barcode.
+            </summary>
+            <param name="iType">Type of encoding to use.</param>
+            <param name="Data">Raw data to encode.</param>
+            <param name="IncludeLabel">Include the label at the bottom of the image with data encoded.</param>
+            <param name="Width">Width of the resulting barcode.(pixels)</param>
+            <param name="Height">Height of the resulting barcode.(pixels)</param>
+            <returns>Image representing the barcode.</returns>
+        </member>
+        <member name="M:BarcodeLib.Barcode.DoEncode(BarcodeLib.TYPE,System.String,System.Boolean,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            Encodes the raw data into binary form representing bars and spaces.  Also generates an Image of the barcode.
+            </summary>
+            <param name="iType">Type of encoding to use.</param>
+            <param name="Data">Raw data to encode.</param>
+            <param name="IncludeLabel">Include the label at the bottom of the image with data encoded.</param>
+            <param name="DrawColor">Foreground color</param>
+            <param name="BackColor">Background color</param>
+            <returns>Image representing the barcode.</returns>
+        </member>
+        <member name="M:BarcodeLib.Barcode.DoEncode(BarcodeLib.TYPE,System.String,System.Boolean,System.Drawing.Color,System.Drawing.Color,System.Int32,System.Int32)">
+            <summary>
+            Encodes the raw data into binary form representing bars and spaces.  Also generates an Image of the barcode.
+            </summary>
+            <param name="iType">Type of encoding to use.</param>
+            <param name="Data">Raw data to encode.</param>
+            <param name="IncludeLabel">Include the label at the bottom of the image with data encoded.</param>
+            <param name="DrawColor">Foreground color</param>
+            <param name="BackColor">Background color</param>
+            <param name="Width">Width of the resulting barcode.(pixels)</param>
+            <param name="Height">Height of the resulting barcode.(pixels)</param>
+            <returns>Image representing the barcode.</returns>
+        </member>
+        <member name="M:BarcodeLib.Barcode.DoEncode(BarcodeLib.TYPE,System.String,System.Boolean,System.Drawing.Color,System.Drawing.Color,System.Int32,System.Int32,System.String@)">
+            <summary>
+            Encodes the raw data into binary form representing bars and spaces.  Also generates an Image of the barcode.
+            </summary>
+            <param name="iType">Type of encoding to use.</param>
+            <param name="Data">Raw data to encode.</param>
+            <param name="IncludeLabel">Include the label at the bottom of the image with data encoded.</param>
+            <param name="DrawColor">Foreground color</param>
+            <param name="BackColor">Background color</param>
+            <param name="Width">Width of the resulting barcode.(pixels)</param>
+            <param name="Height">Height of the resulting barcode.(pixels)</param>
+            <param name="XML">XML representation of the data and the image of the barcode.</param>
+            <returns>Image representing the barcode.</returns>
+        </member>
+        <member name="P:BarcodeLib.Barcode.RawData">
+            <summary>
+            Gets or sets the raw data to encode.
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.RawLogo">
+            <summary>
+            店名
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.EncodedValue">
+            <summary>
+            Gets the encoded value.
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.Country_Assigning_Manufacturer_Code">
+            <summary>
+            Gets the Country that assigned the Manufacturer Code.
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.EncodedType">
+            <summary>
+            Gets or sets the Encoded Type (ex. UPC-A, EAN-13 ... etc)
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.EncodedImage">
+            <summary>
+            Gets the Image of the generated barcode.
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.ForeColor">
+            <summary>
+            Gets or sets the color of the bars. (Default is black)
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.BackColor">
+            <summary>
+            Gets or sets the background color. (Default is white)
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.LabelFont">
+            <summary>
+            Gets or sets the label font. (Default is Microsoft Sans Serif, 10pt, Bold)
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.LabelPosition">
+            <summary>
+            Gets or sets the location of the label in relation to the barcode. (BOTTOMCENTER is default)
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.RotateFlipType">
+            <summary>
+            Gets or sets the degree in which to rotate/flip the image.(No action is default)
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.Width">
+            <summary>
+            Gets or sets the width of the image to be drawn. (Default is 300 pixels)
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.Height">
+            <summary>
+            Gets or sets the height of the image to be drawn. (Default is 150 pixels)
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.IncludeLabel">
+            <summary>
+            Gets or sets whether a label should be drawn below the image.
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.EncodingTime">
+            <summary>
+            Gets or sets the amount of time in milliseconds that it took to encode and draw the barcode.
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.XML">
+            <summary>
+            Gets the XML representation of the Barcode data and image.
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.ImageFormat">
+            <summary>
+            Gets or sets the image format to use when encoding and returning images. (Jpeg is default)
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.Errors">
+            <summary>
+            Gets the list of errors encountered.
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.Alignment">
+            <summary>
+            Gets or sets the alignment of the barcode inside the image. (Not for Postnet or ITF-14)
+            </summary>
+        </member>
+        <member name="P:BarcodeLib.Barcode.Version">
+            <summary>
+            Gets the assembly version information.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.Standard2of5.Encode_Standard2of5">
+            <summary>
+            Encode the raw data using the Standard 2 of 5 algorithm.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.Postnet.Encode_Postnet">
+            <summary>
+            Encode the raw data using the PostNet algorithm.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.Interleaved2of5.Encode_Interleaved2of5">
+            <summary>
+            Encode the raw data using the Interleaved 2 of 5 algorithm.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.JAN13.Encode_JAN13">
+            <summary>
+            Encode the raw data using the JAN-13 algorithm.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.BarcodeModel.GetBarcode(System.String,System.String,System.Int32,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            產生BarCode
+            </summary>
+            <param name="bartxt">Barcode碼</param>
+            <param name="barWidth">圖寬</param>
+            <param name="barHeight">圖高</param>
+            <param name="clude">公司名稱(條碼左上方)</param>
+            <param name="vludeTop">條碼數字(條碼下方置中)</param>
+            <returns></returns>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.ISBN.Encode_ISBN_Bookland">
+            <summary>
+            Encode the raw data using the Bookland/ISBN algorithm.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.EAN13.Encode_EAN13">
+            <summary>
+            Encode the raw data using the EAN-13 algorithm. (Can include the checksum already.  If it doesnt exist in the data then it will calculate it for you.  Accepted data lengths are 12 + 1 checksum or just the 12 data digits)
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.Telepen.#ctor(System.String)">
+            <summary>
+            Encodes data using the Telepen algorithm.
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.Telepen.Encode_Telepen">
+            <summary>
+            Encode the raw data using the Telepen algorithm.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.Code11.Encode_Code11">
+            <summary>
+            Encode the raw data using the Code 11 algorithm.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.Code128.#ctor(System.String)">
+            <summary>
+            Encodes data in Code128 format.
+            </summary>
+            <param name="input">Data to encode.</param>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.Code128.#ctor(System.String,BarcodeLib.Symbologies.Code128.TYPES)">
+            <summary>
+            Encodes data in Code128 format.
+            </summary>
+            <param name="input">Data to encode.</param>
+            <param name="type">Type of encoding to lock to. (Code 128A, Code 128B, Code 128C)</param>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.UPCE.#ctor(System.String)">
+            <summary>
+            Encodes a UPC-E symbol.
+            </summary>
+            <param name="input">Data to encode.</param>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.UPCE.Encode_UPCE">
+            <summary>
+            Encode the raw data using the UPC-E algorithm.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.MSI.Encode_MSI">
+            <summary>
+            Encode the raw data using the MSI algorithm.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.UPCSupplement5.Encode_UPCSupplemental_5">
+            <summary>
+            Encode the raw data using the UPC Supplemental 5-digit algorithm.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.UPCA.Encode_UPCA">
+            <summary>
+            Encode the raw data using the UPC-A algorithm.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.Code93.#ctor(System.String)">
+            <summary>
+            Encodes with Code93.
+            </summary>
+            <param name="input">Data to encode.</param>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.Code93.Encode_Code93">
+            <summary>
+            Encode the raw data using the Code 93 algorithm.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.Codabar.Encode_Codabar">
+            <summary>
+            Encode the raw data using the Codabar algorithm.
+            </summary>
+        </member>
+        <member name="M:BarcodeLib.Symbologies.UPCSupplement2.Encode_UPCSupplemental_2">
+            <summary>
+            Encode the raw data using the UPC Supplemental 2-digit algorithm.
+            </summary>
+        </member>
+        <member name="T:BarcodeLib.BarcodeXML">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:BarcodeLib.BarcodeXML.BarcodeDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:BarcodeLib.BarcodeXML.BarcodeRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:BarcodeLib.BarcodeXML.BarcodeRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+    </members>
+</doc>

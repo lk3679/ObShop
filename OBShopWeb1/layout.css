@@ -1,0 +1,101 @@
+﻿body 
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.style1
+{
+    color: #0066CC;
+    font-family: 微軟正黑體;
+    font-size: x-large;
+    font-weight: 700;
+}
+.style2
+{
+    font-family: 微軟正黑體;
+    font-size:  medium;
+    font-weight:bold;
+}
+.style3
+{
+    color: #FF0000; 
+    font-family: 微軟正黑體; 
+    font-size: medium;
+}
+.style4gv
+{
+    font-size: medium;
+    font-family: 微軟正黑體;
+    text-align: center;
+    font-weight:bold;
+}
+.style5menu
+{
+    color: #FFFFFF;
+    font-size: x-large;
+    font-family: 微軟正黑體;
+    text-decoration: none;
+}
+.style5menuHead
+{
+    color: #FFFFFF;
+    font-size: x-large;
+    font-family: 微軟正黑體;
+    text-decoration: none;
+}
+.style6menu
+{
+    text-align: right;
+    font-family: 微軟正黑體;
+    font-size: large;
+    text-decoration: none;
+}
+.style7pic
+{
+    width: 135px;
+    height: 104px;
+}
+.style8menu
+{
+    color: #000000;
+    font-family: 微軟正黑體;
+    font-size: x-large;
+    text-align: right;
+    text-decoration: none;
+}
+.style9watermark
+{
+    color: #BBBBBB;
+    font-family: 微軟正黑體;
+    font-size:  small;
+}
+.style10gv
+{
+    font-size: medium;
+    font-family: 微軟正黑體;
+    text-align: left;
+    font-weight:bold;
+}
+.style11gv
+{
+    font-size: small;
+    font-family: 微軟正黑體;
+    text-align: center;
+    font-weight:bold;
+}
+.style12menu
+{
+    font-size: small;
+    font-family: 微軟正黑體;
+    text-align: center;
+    font-weight:bold;
+}
+.style13PDA
+{
+    font-family: 微軟正黑體;
+    font-size:  medium;
+    font-weight:bold;
+    margin-bottom: 0px;
+}
